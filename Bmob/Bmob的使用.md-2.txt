@@ -1,0 +1,76 @@
+##Bmob使用  
+###简介  
+Bmob平台为您的移动应用提供了一个完整的后端解决方案，我们提供轻量级的SDK开发包，让开发者以最小的配置和最简单的方式使用Bmob平台提供的服务，进而完全消除开发者编写服务器代码以及维护服务器的操作。  
+###快速入门  
+#####1.注册Bmob账号  
+在网址栏输入www.bmob.cn或者在百度输入Bmob进行搜索，打开Bmob官网后，点击右上角的“注册”，在跳转页面填入你的姓名、邮箱、设置密码，确认后到你的邮箱激活Bmob账户，你就可以用Bmob轻松开发应用了。  
+#####2.网站后台创建应用  
+登录账号进入bmob后台后，点击后台界面左上角“创建应用”，在弹出框输入你应用的名称，然后确认，你就拥有了一个等待开发的应用。  
+#####3.安装BmobSDK  
+######1)将下载好的BmobSDK引入项目  
+在你的在你的XCode项目工程中，添加BmobSDK.framework  
+######2)添加相关的系统framework:  
+在你的XCode工程中Project ->TARGETS -> Build Phases->Link Binary With Libraries引入:   
+CoreLocation.framework  
+Security.framework  
+CoreGraphics.framework  
+MobileCoreServices.framework  
+CFNetwork.framework  
+CoreTelephony.framework  
+SystemConfiguration.framework  
+libz.1.2.5.tbd  
+libicucore.tbd  
+libsqlite3.tbd  
+#####4.设置应用的BmobKey  
+1)在桥接文件中导入  	``#import <BmobSDK/Bmob.h>--``
+2)在xcode工程的AppDelegate文件中创建应用key,填入申请的授权key   
+``Bmob.registerWithAppKey("72e886436014590cb9ad1c8afd379ef9")``   
+
+#####5.添加一行数据  
+		let userName = BmobObject.init(className: "Name")
+        userName.setObject("余婷", forKey: "user")
+        userName.saveInBackgroundWithResultBlock { (bool, error) in
+            
+            print("成功")
+        } 
+
+
+####5.获取一条数据  
+			let bquery = BmobQuery.init(className: "Name")
+        	bquery.getObjectInBackgroundWithId("7129371cf6") { (objc, error) in
+
+            print("===\(objc.objectForKey("user"))")
+        }    
+        
+#####6.获取一张表中所有的数据  
+			let bquery = BmobQuery.init(className: "Name")
+        	bquery.findObjectsInBackgroundWithBlock { (allObjc, error) in
+            
+            print("!!:\(allObjc)")
+        }  
+       
+######7.更新一行数据   
+			let bquery = BmobQuery.init(className: "Name")
+        	bquery.getObjectInBackgroundWithId("7129371cf6") { (objc, error) in
+
+            let objc1 = BmobObject.init(outDataWithClassName: objc.className, objectId: objc.objectId)
+            objc1.setObject("小花", forKey: "user")
+            objc1.updateInBackground()
+        }  
+       
+       
+       
+#####8.删除一行数据  
+			let bquery = BmobQuery.init(className: "Name")
+        
+        //删除
+        	bquery.getObjectInBackgroundWithId("7129371cf6") { (objc, error) in
+            
+            objc.deleteInBackground()
+        }  
+        
+       
+
+
+
+BmobKey:233708c9172b286e734c6591fd06e79b

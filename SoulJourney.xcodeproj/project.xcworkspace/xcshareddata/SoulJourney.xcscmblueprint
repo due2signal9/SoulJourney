@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "350AB9333672CF0B8998E792F14E6FCE3B3EDEBF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "350AB9333672CF0B8998E792F14E6FCE3B3EDEBF" : 9223372036854775807,
+    "45070C68B71673F2A7CD556DE5330AB208AF240F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "22FB6434-C048-42DE-8582-3EF84E8AF286",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "350AB9333672CF0B8998E792F14E6FCE3B3EDEBF" : "SoulJourney\/",
+    "45070C68B71673F2A7CD556DE5330AB208AF240F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SoulJourney",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SoulJourney.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vchen217\/SoulJourney",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "350AB9333672CF0B8998E792F14E6FCE3B3EDEBF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vchen217\/SoulJourney.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45070C68B71673F2A7CD556DE5330AB208AF240F"
+    }
+  ]
+}

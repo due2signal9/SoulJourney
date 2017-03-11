@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="187" id="KGk-i7-Jjw" customClass="CommonlyusedTableViewCell" customModule="SoulJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="跟团游.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-BL-xiB">
+                        <rect key="frame" x="8" y="135" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="0jG-pH-JMn"/>
+                            <constraint firstAttribute="height" constant="40" id="gHt-oa-5Qm"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="自由行.png" translatesAutoresizingMaskIntoConstraints="NO" id="VOr-ht-dNu">
+                        <rect key="frame" x="8" y="87" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="VQj-3R-b3I"/>
+                            <constraint firstAttribute="height" constant="40" id="XBZ-Bo-9Wd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="机票.png" translatesAutoresizingMaskIntoConstraints="NO" id="DAb-jv-jYx">
+                        <rect key="frame" x="8" y="39" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4Pu-cI-VqB"/>
+                            <constraint firstAttribute="height" constant="40" id="M4P-KK-Q6W"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nno-ov-mK6">
+                        <rect key="frame" x="8" y="39" width="295" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="d6X-uv-TNn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="机票">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJL-Kh-mwP">
+                        <rect key="frame" x="8" y="87" width="295" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="y6C-iZ-8IM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="自由行">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y3-pU-lVL">
+                        <rect key="frame" x="8" y="135" width="295" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="zMP-YW-Hie"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="跟团游">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-Db-6WG">
+                        <rect key="frame" x="50" y="58" width="221" height="2"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ycx-PC-wWp"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wv-d9-W4S">
+                        <rect key="frame" x="50" y="106" width="209" height="2"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="WrB-JM-4Ue"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVJ-Fd-5jt">
+                        <rect key="frame" x="50" y="154" width="209" height="2"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="lZU-k0-Wd4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="常用功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02j-Zg-IgP">
+                        <rect key="frame" x="8" y="8" width="295" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="LQv-Od-sHK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VOr-ht-dNu" firstAttribute="top" secondItem="DAb-jv-jYx" secondAttribute="bottom" constant="8" id="1Rb-b9-Egz"/>
+                    <constraint firstAttribute="trailing" secondItem="3wv-d9-W4S" secondAttribute="trailing" constant="52" id="46m-wH-Cw8"/>
+                    <constraint firstItem="02j-Zg-IgP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7Np-To-fAu"/>
+                    <constraint firstItem="DAb-jv-jYx" firstAttribute="top" secondItem="02j-Zg-IgP" secondAttribute="bottom" constant="8" id="94U-BV-8DV"/>
+                    <constraint firstItem="kVJ-Fd-5jt" firstAttribute="centerY" secondItem="pOq-BL-xiB" secondAttribute="centerY" id="9q0-iT-HBH"/>
+                    <constraint firstItem="VOr-ht-dNu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Cm0-iX-s6t"/>
+                    <constraint firstItem="pOq-BL-xiB" firstAttribute="top" secondItem="VOr-ht-dNu" secondAttribute="bottom" constant="8" id="Cz4-Tw-Q2n"/>
+                    <constraint firstAttribute="trailing" secondItem="tJL-Kh-mwP" secondAttribute="trailing" constant="8" id="DbA-J3-Pf5"/>
+                    <constraint firstItem="kVJ-Fd-5jt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="EkL-wh-TTA"/>
+                    <constraint firstAttribute="trailing" secondItem="8Y3-pU-lVL" secondAttribute="trailing" constant="8" id="GCh-jZ-A01"/>
+                    <constraint firstAttribute="trailing" secondItem="02j-Zg-IgP" secondAttribute="trailing" constant="8" id="Kak-CQ-8Ql"/>
+                    <constraint firstItem="pOq-BL-xiB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Px1-Hi-7c9"/>
+                    <constraint firstAttribute="trailing" secondItem="nNs-Db-6WG" secondAttribute="trailing" constant="40" id="Wfs-6Y-8Sk"/>
+                    <constraint firstItem="nNs-Db-6WG" firstAttribute="centerY" secondItem="nno-ov-mK6" secondAttribute="centerY" id="XEK-hn-yLp"/>
+                    <constraint firstItem="3wv-d9-W4S" firstAttribute="centerY" secondItem="VOr-ht-dNu" secondAttribute="centerY" id="ZpM-91-NcM"/>
+                    <constraint firstItem="8Y3-pU-lVL" firstAttribute="top" secondItem="VOr-ht-dNu" secondAttribute="bottom" constant="8" id="dGo-d5-cLd"/>
+                    <constraint firstItem="tJL-Kh-mwP" firstAttribute="top" secondItem="nno-ov-mK6" secondAttribute="bottom" constant="8" id="hBw-de-Z0k"/>
+                    <constraint firstItem="DAb-jv-jYx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kzt-X3-cDI"/>
+                    <constraint firstItem="tJL-Kh-mwP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lBX-e2-r8l"/>
+                    <constraint firstItem="nno-ov-mK6" firstAttribute="top" secondItem="02j-Zg-IgP" secondAttribute="bottom" constant="8" id="mu1-op-fS9"/>
+                    <constraint firstAttribute="trailing" secondItem="kVJ-Fd-5jt" secondAttribute="trailing" constant="52" id="o3w-Fn-oot"/>
+                    <constraint firstItem="3wv-d9-W4S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="psT-T3-E7D"/>
+                    <constraint firstItem="02j-Zg-IgP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="t8q-nq-8Ay"/>
+                    <constraint firstItem="nNs-Db-6WG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="tqU-nI-67S"/>
+                    <constraint firstAttribute="trailing" secondItem="nno-ov-mK6" secondAttribute="trailing" constant="8" id="uWf-d2-G6j"/>
+                    <constraint firstItem="8Y3-pU-lVL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ulm-UF-tcp"/>
+                    <constraint firstItem="nno-ov-mK6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xKj-Lf-L6r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="airBtn" destination="nno-ov-mK6" id="OUJ-ga-2rF"/>
+                <outlet property="freeBtn" destination="tJL-Kh-mwP" id="Foc-dZ-6wf"/>
+                <outlet property="termBtn" destination="8Y3-pU-lVL" id="3Ik-vB-2Wh"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="388.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="机票.png" width="48" height="48"/>
+        <image name="自由行.png" width="48" height="48"/>
+        <image name="跟团游.png" width="48" height="48"/>
+    </resources>
+</document>

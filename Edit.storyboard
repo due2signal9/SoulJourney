@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t3P-Zq-hLI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Edit View Controller-->
+        <scene sceneID="A8X-Vq-8cd">
+            <objects>
+                <viewController id="t3P-Zq-hLI" customClass="EditViewController" customModule="SoulJourney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGV-Tz-yhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="uVU-7a-YMt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0x-I5-S4p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="无标题笔记" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5uF-vv-5IG">
+                                <rect key="frame" x="8" y="0.0" width="584" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="78B-es-1yL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRH-sE-PaW">
+                                <rect key="frame" x="8" y="31" width="584" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7Is-Bz-9Bl"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-oI-Bag">
+                                <rect key="frame" x="8" y="33" width="584" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cRH-sE-PaW" firstAttribute="leading" secondItem="i0x-I5-S4p" secondAttribute="leading" constant="8" id="37N-uS-Y7B"/>
+                            <constraint firstItem="5uF-vv-5IG" firstAttribute="leading" secondItem="i0x-I5-S4p" secondAttribute="leading" constant="8" id="55G-E0-OFy"/>
+                            <constraint firstItem="5uF-vv-5IG" firstAttribute="top" secondItem="i0x-I5-S4p" secondAttribute="top" id="F2j-FW-Blb"/>
+                            <constraint firstItem="Tpi-oI-Bag" firstAttribute="top" secondItem="cRH-sE-PaW" secondAttribute="bottom" constant="1" id="O0m-R2-FsX"/>
+                            <constraint firstItem="Tpi-oI-Bag" firstAttribute="leading" secondItem="i0x-I5-S4p" secondAttribute="leading" constant="8" id="YQ9-mt-EDW"/>
+                            <constraint firstItem="cRH-sE-PaW" firstAttribute="top" secondItem="5uF-vv-5IG" secondAttribute="bottom" constant="1" id="b0n-OV-rgI"/>
+                            <constraint firstItem="cRH-sE-PaW" firstAttribute="top" secondItem="5uF-vv-5IG" secondAttribute="bottom" id="dd7-FN-UD0"/>
+                            <constraint firstAttribute="trailing" secondItem="5uF-vv-5IG" secondAttribute="trailing" constant="8" id="er5-eO-fRe"/>
+                            <constraint firstAttribute="trailing" secondItem="cRH-sE-PaW" secondAttribute="trailing" constant="8" id="fcD-dy-5GK"/>
+                            <constraint firstAttribute="trailing" secondItem="Tpi-oI-Bag" secondAttribute="trailing" constant="8" id="jas-f9-nb9"/>
+                            <constraint firstItem="uVU-7a-YMt" firstAttribute="top" secondItem="Tpi-oI-Bag" secondAttribute="bottom" id="q47-jX-fAi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dd7-FN-UD0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="summaryTextView" destination="Tpi-oI-Bag" id="7li-MN-Lu4"/>
+                        <outlet property="titleTextField" destination="5uF-vv-5IG" id="cDg-BC-xze"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szZ-Qb-khe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="257"/>
+        </scene>
+    </scenes>
+</document>
